@@ -19,11 +19,13 @@
 			body {
 				background-color: #b7b7ad;
 			}
+
 			.card_header {
 				color: #fff;
 				text-align: center;
 				border-radius: 25px 25px 0px 0px;
 			}
+
 			.card_body {
 				background-color: #434544;
 				color: #fff;
@@ -31,34 +33,45 @@
 				padding: 10px 30px 25px 30px;
 				min-height: 600px;
 			}
+
 			.card_body h3 {
 				text-transform: uppercase;
 				font-size: 18px;
 			}
+
 			.card_body a, .card_body a:visited, .card_body a:hover {
 				color: #fff;
 				text-decoration: underline;
 			}
+
 			.card {
 				margin: 40px 0px;
 			}
 
-			table {
-				border-spacing: 5px;
-				font-family: "verdana";
-				width: 100%;
+			.panel {
+				border-radius: 0px;
+				border: none;
 			}
-			th, td {
-				padding: 5px;
+
+			.panel-body {
+				color: #000;
+				font-size: 60px;
 				text-align: center;
 			}
-			table#tLC tr:nth-child(even) {
-				background-color: #5187D6;
-				color: white;
+
+			.panel-footer {
+				border-radius: 0px;
+				background-color: #3f5d6f;
+				font-weight: bold;
+				text-align: center;
+				border-top: solid 4px #434544;
 			}
-			table#tLC tr:nth-child(odd) {
-				background-color:#fff;
-				font-size:25px;
+
+			#equal_sign {
+				text-align: center;
+				line-height: 100px;
+				font-size: 60px;
+				font-weight: bold;
 			}
 		</style>
 	</head>
@@ -150,17 +163,21 @@
 				<div class="row card_body">
 					<h3>Challenge:</h3>
 					<p>Build a "Temperature converter" component that has two input fields that converts temperature from Celsius to Fahrenheit and vice versa when a user enters a number in either field.</p>
-					<table id="tLC">
-						<tr>
-							<td>0</td>
-							<td>32</td>
-						</tr>
-						<tr>
-							<td>Celsius</td>
-							<td>Fahrenheit</td>
-						</tr>
-					</table>
-					<br/>
+					<div class="row">
+						<div class="col-xs-4 col-xs-offset-1">
+							<div class="panel panel-default">
+								<div class="panel-body">0</div>
+								<div class="panel-footer">Celsius</div>
+							</div>
+						</div>
+						<div class="col-xs-2" id="equal_sign">=</div>
+						<div class="col-xs-4">
+							<div class="panel panel-default">
+								<div class="panel-body">0</div>
+								<div class="panel-footer">Fahrenheit</div>
+							</div>
+						</div>
+					</div>
 					<h3>Requirements:</h3>
 					<ol>
 						<li>Celsius field should default to 0 and Fahrenheit field should default to 32.</li>
