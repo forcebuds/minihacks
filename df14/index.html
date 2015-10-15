@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dreamforce 2014 - Mini Hacks</title>
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<style>
+			body {
+				background-color: #b7b7ad;
+			}
+
+			.card_header {
+				color: #fff;
+				text-align: center;
+				border-radius: 25px 25px 0px 0px;
+			}
+
+			.card_body {
+				background-color: #434544;
+				color: #fff;
+				border-radius: 0px 0px 25px 25px;
+				padding: 10px 30px 25px 30px;
+				min-height: 600px;
+			}
+
+			.card_body h3 {
+				text-transform: uppercase;
+				font-size: 18px;
+			}
+
+			.card_body a, .card_body a:visited, .card_body a:hover {
+				color: #fff;
+				text-decoration: underline;
+			}
+
+			.card {
+				margin: 40px 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="row card" id="fun_with_names">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #3d7836;">
+					<h1>DEVZONE 2014</h1>
+					<h2>Fun with Names</h2>
+				</div>
+				<div class="row card_body">
+					<h3>Challenge:</h3>
+					<p>Every contact deserves to have their name Pig-Latin-ated.  Using only the 'clicks' approach to the Salesforce1 Platform, create a solution that will transform the name of each Contact record in your Developer Edition into Pig Latin.</p>
+					<h3>Requirements:</h3>
+					<ol>
+						<li>This challenge requires a <a href="http://bit.ly/dfcsignup">Force.com Developer Edition</a></li>
+						<li>No code allowed, this includes any of the programatic features such as Apex, Visualforce, custom Javascript buttons, or integration with external systems.</li>
+						<li>Must follow the rules of pig latin according to <a href="http://en.wikipedia.org/wiki/Pig_Latin">Wikipedia</a></li>
+						<li>Both First Name and Last Name fields must be included</li>
+						<li>If a change is made to the First Name or Last Name field on the contact, the Pig Latin form of the names must also update dynamically</li>
+					</ol>
+					<h3>Notes:</h3>
+					<p>There are serveral declarative features that can take existing data, modify it, and then output new data, including formula fields, workflow rules and flow triggers</p>
+				</div>
+			</div>
+		</div>
+		<div class="row card" id="puppyForce">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #1d231c;">
+					<h1>DEVZONE 2014</h1>
+					<h2>PuppyForce</h2>
+				</div>
+				<div class="row card_body">
+					<h3>Challenge:</h3>
+					<p>Your company is going to allow employees to bring their dogs to work, so you will build and App to manage this.  This App will be called PuppyForce and should be built with the 'clicks' approach to the Salesforce1 Platform.</p>
+					<h3>Requirements:</h3>
+					<p>Before bringing a dog into the office, the dog must first be registered.  Registration requires veterinary vaccination records, signing of an employee agreement, a face picture of the dog, and approval by the PuppyForce administrator.  The documents should all be attached to the dog's record in some way.  The vaccination record will need to be renewed every year by the pet owner.</p>
+					<p>Once the dog has been approved, there are 3 office areas where dogs are allowed.  Each of these areas has a specific capcity (let's say 6) for total number of dogs on any day.  Dogs must be registered in advance for the day and location they will be in the office.  PuppyForce locations cannot be overbooked.</p>
+					<p>Please build out this application using the point-and-click tools of the Salesforce1 Platform</p>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Card Template -->
+		<!--
+		<div class="row card" id="card_id">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #f00;">
+					<h1></h1>
+					<h2></h2>
+				</div>
+				<div class="row card_body">
+				</div>
+			</div>
+		</div>
+		-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>
