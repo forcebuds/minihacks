@@ -9,5 +9,5 @@ This is a collection of minihacks from previous Dreamforces.  These have all bee
 Simply send a pull request with the new minihacks and if it's formatted correctly, I'll approve it
 
 # Contributors
-* [ocon](https://github.com/pcon)
+* [pcon](https://github.com/pcon)
 * [barfait](https://github.com/barfait)
