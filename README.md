@@ -2,7 +2,7 @@
 
 This is a collection of minihacks from previous Dreamforces.  These have all been copied from the cards distributed during Dreamforce and are only here for educational use.  At some point there may be community based minihacks added.
 
-## [View Minihacks](http://pcon.github.com/pcon/minihacks/)
+## [View Minihacks](http://pcon.github.com/minihacks/)
 
 # How to add other minihacks
 
