@@ -47,10 +47,36 @@
 			.card {
 				margin: 40px 0px;
 			}
+
+			.panel {
+				border-radius: 0px;
+				border: none;
+			}
+
+			.panel-body {
+				color: #000;
+				font-size: 60px;
+				text-align: center;
+			}
+
+			.panel-footer {
+				border-radius: 0px;
+				background-color: #3f5d6f;
+				font-weight: bold;
+				text-align: center;
+				border-top: solid 4px #434544;
+			}
+
+			#equal_sign {
+				text-align: center;
+				line-height: 100px;
+				font-size: 60px;
+				font-weight: bold;
+			}
 		</style>
 	</head>
 	<body>
-		<div class="row card" id="fun_with_names">
+		<div class="row card" id="fun_with_names"> <!-- added by pcon -->
 			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
 				<div class="row card_header" style="background-color: #3d7836;">
 					<h1>DEVZONE 2014</h1>
@@ -72,7 +98,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row card" id="puppyForce">
+		<div class="row card" id="puppyForce">  <!-- added by pcon -->
 			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
 				<div class="row card_header" style="background-color: #1d231c;">
 					<h1>DEVZONE 2014</h1>
@@ -83,12 +109,105 @@
 					<p>Your company is going to allow employees to bring their dogs to work, so you will build and App to manage this.  This App will be called PuppyForce and should be built with the 'clicks' approach to the Salesforce1 Platform.</p>
 					<h3>Requirements:</h3>
 					<p>Before bringing a dog into the office, the dog must first be registered.  Registration requires veterinary vaccination records, signing of an employee agreement, a face picture of the dog, and approval by the PuppyForce administrator.  The documents should all be attached to the dog's record in some way.  The vaccination record will need to be renewed every year by the pet owner.</p>
-					<p>Once the dog has been approved, there are 3 office areas where dogs are allowed.  Each of these areas has a specific capcity (let's say 6) for total number of dogs on any day.  Dogs must be registered in advance for the day and location they will be in the office.  PuppyForce locations cannot be overbooked.</p>
-					<p>Please build out this application using the point-and-click tools of the Salesforce1 Platform</p>
+					<p>Once the dog has been approved, there are 3 office areas where dogs are allowed.  Each of these areas has a specific capacity (let's say 6) for total number of dogs on any day.  Dogs must be registered in advance for the day and location they will be in the office.  PuppyForce locations cannot be overbooked.</p>
+					<p>Please build out this application using the point-and-click tools of the Salesforce1 Platform.</p>
 				</div>
 			</div>
 		</div>
-
+		<div class="row card" id="streaming_api"> <!-- added by barfait -->
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #c93316;">
+					<h1>DEVZONE 2014</h1>
+					<h2>Streaming API</h2>
+				</div>
+				<div class="row card_body">
+					<h3>Challenge:</h3>
+					<p>Redesign the 'leadList' Visualforce page to update Leads using the Force.com Streaming API.</p>
+					<h3>Requirements:</h3>
+					<ol>
+						<li>Install <a href="http://bit.ly/streamMH">this package</a> into any Developer Edition org.</li>
+						<li>Redesign the 'leadList' VF page so that it receives and displays a stream of updates about new and updated open Leads using the Force.com Streaming API.</li>
+						<li>To make things easier, leverage the pre-installed static resources (cometd, jQuery, JSON, etc.).</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="row card" id="heroku_app_using_forceCom"> <!-- added by barfait -->
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #340169;">
+					<h1>DEVZONE 2014</h1>
+					<h2>Heroku App Using Force.com</h2>
+				</div>
+				<div class="row card_body">
+					<h3>Challenge:</h3>
+					<p>Build and deploy a Heroku app that integrates with Force.com. The application can be written in any language Heroku supports, and it should enforce Salesforce OAuth authorization, as well as utilize the Force.com API to list records in your Account object.</p>
+					<h3>Requirements:</h3>
+					<ol>
+						<li>You can use <a href="http://bit.ly/heroku-force-workbook">this app</a> as a template, or write your own.</li>
+						<li>Deploy your app to Heroku.</li>
+						<li>Create a Connected App in your Force.com Developer Edition to enable OAuth.</li>
+						<li>Configure the Heroku app to use the Connected App OAuth credentials.</li>
+						<li>Code the Heroku app to display an alphabetical list of the accounts in your Force.com org.</li>
+					</ol>
+					<h3>Pre-requisites:</h3>
+					<p>An <a href="http://developer.salesforce.com">account for a Developer Org</a> as well as an <a href="http://www.heroku.com">account on Heroku</a>. Both accounts are free to create if you don't already have them.
+				</div>
+			</div>
+		</div>
+		<div class="row card" id="lightning_components"> <!-- added by barfait -->
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #250e51;">
+					<h1>DEVZONE 2014</h1>
+					<h2>Lightning Components</h2>
+				</div>
+				<div class="row card_body">
+					<h3>Challenge:</h3>
+					<p>Build a "Temperature converter" component that has two input fields that converts temperature from Celsius to Fahrenheit and vice versa when a user enters a number in either field.</p>
+					<div class="row">
+						<div class="col-xs-4 col-xs-offset-1">
+							<div class="panel panel-default">
+								<div class="panel-body">0</div>
+								<div class="panel-footer">Celsius</div>
+							</div>
+						</div>
+						<div class="col-xs-2" id="equal_sign">=</div>
+						<div class="col-xs-4">
+							<div class="panel panel-default">
+								<div class="panel-body">32</div>
+								<div class="panel-footer">Fahrenheit</div>
+							</div>
+						</div>
+					</div>
+					<h3>Requirements:</h3>
+					<ol>
+						<li>Celsius field should default to 0 and Fahrenheit field should default to 32.</li>
+						<li>When the user types a number into the Celsius field, it should update the Fahrenheit field and vice versa.</li>
+						<li>If the user typs a non-number, it should reset it to default values.</li>
+					</ol>
+					<p>The component should be self-contained and should not use any external libraries, CSS, etc.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row card" id="salesforce1_mobile"> <!-- added by barfait -->
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #5187d6;">
+					<h1>DEVZONE 2014</h1>
+					<h2>Salesforce1 Mobile</h2>
+				</div>
+				<div class="row card_body">
+					<h3>Challenge:</h3>
+					<p>Add functionality to the Project management mobile app to quickly assign a Contact to a Deliverable. Next, modify the mobile layout to display related deliverable/assignee data from the Assignment record.</p>
+					<h3>Requirements:</h3>
+					<ol>
+					<li>Install the <a href="http://bit.ly/installpackage">schema package</a>.</li>
+					<li>Create at least one Project record and one Deliverable record.</li>
+					<li>Create and assign a compact layout for the Project and Deliverable objects with four important fields.</li>
+					<li>Create a custom action on Deliverable to create a child record for the Assignment object and add it to the publisher actions in the page layout.</li>
+					<li>Add an enhanced lookup mobile card for both Project and Deliverable page layout.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
 
 		<!-- Card Template -->
 		<!--
