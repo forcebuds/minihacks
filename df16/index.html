@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dreamforce 2016 - Mini Hacks</title>
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<style>
+			body {
+				background-color: #b7b7ad;
+			}
+
+			.card_header {
+				color: #fff;
+				text-align: center;
+			}
+
+			.card_body {
+				background-color: #fff;
+				color: #2e3f49;
+				padding: 10px 30px 25px 30px;
+				min-height: 600px;
+			}
+
+			.card_body h3 {
+				font-size: 18px;
+			}
+
+			.card_body a, .card_body a:visited, .card_body a:hover {
+				color: rgb(30,75,112);  /* tried matching link style but it just looks like a visited link, but former links were white on white */
+				text-decoration: underline;
+			}
+
+			.card {
+				margin: 40px 0px;
+			}
+
+			.challenge {
+				background-color: #d6dad9;
+				padding: 20px;
+			}
+
+			.challenge h3 {
+				margin-top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="row card" id="save_some_clicks">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #2c75a2;">
+					<h1>Dreamforce 2016</h1>
+					<h2>Save Some Clicks</h2>
+				</div>
+				<div class="row card_body">
+					<div class="challenge">
+						<h3>Challenge</h3>
+						<p>Business Travel needs planning and approvals. Let’s help our frequent travellers by creating an App that can ease the task of raising travel requests.</p>
+					</div>
+					<h3>Requirements</h3>
+					<ol>
+						<li>This challenge requires a <a href="https://sfdc.co/df16devsignup">Force.com Developer Edition.</a></li>
+						<li>No code allowed, this includes any of the programatic features such as Apex, Visualforce, custom JavaScript buttons, or integration with external systems.</li>
+						<li>Basic details related to travel plan should be captured in the Travel Request Object like Travel Request Name, Purpose of Travel, Travel Start Date, Days of travel (should be auto populated), Travel End Date.</li>
+						<li>Travel Request should also capture expenditure estimates like Airfare, Accommodation and Miscellaneous. There should a total field that calculates the estimates automatically.</li>
+						<li>If the estimate goes beyond $700, request should be auto submitted for approval from Employee’s manager.</li>
+						<li>Record should be locked when under approval process.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="row card" id="allinone_system">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #22752a;">
+					<h1>Dreamforce 2016</h1>
+					<h2>All-in-one System</h2>
+				</div>
+				<div class="row card_body">
+					<div class="challenge">
+						<h3>Challenge</h3>
+						<p>You wish to have Salesforce serve as a frontend to all your backend systems. You begin with data from your Healthcare legacy system which you wish to access in Salesforce. No code is the way to go!</p>
+					</div>
+					<h3>Requirements:</h3>
+					<ol>
+						<li>This challenge requires a <a href="https://sfdc.co/df16devsignup">Force.com Developer Edition.</a></li>
+						<li>No code allowed, this includes any of the programatic features such as Apex, Visualforce, custom JavaScript buttons, or integration with external systems.</li>
+						<li><a href="http://bit.ly/externaldb">Use this as your external Database system.</a></li>
+						<li>You should link the Healthcare policy record to child customer records using object relationships as defined in the help doc <a href="https://sfdc.co/df16helpdoc">available here.</a></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="row card" id="redesign_visualforce">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #ba8944;">
+					<h1>Dreamforce 2016</h1>
+					<h2>Redesign Visualforce</h2>
+				</div>
+				<div class="row card_body">
+					<div class="challenge">
+						<h3>Challenge</h3>
+						<p>Lightning Experience UI is the new talk of the town and you wish to redesign your Visualforce page in Salesforce to have the look and feel of Lightning Experience.</p>
+					</div>
+					<h3>Requirements</h3>
+					<ol>
+						<li>This challenge requires a <a href="https://sfdc.co/df16devsignup">Force.com Developer Edition.</a></li>
+						<li>Refer the code in <a href="http://bit.ly/df16sldshack">this blog post.</a></li>
+						<li>The Visualforce page in the blog is designed to create an Account record so be sure you make appropriate code changes so that the new page creates a new Contact record.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="row card" id="lightning_contacts">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #63acce;">
+					<h1>Dreamforce 2016</h1>
+					<h2>Lightning Contacts</h2>
+				</div>
+				<div class="row card_body">
+					<div class="challenge">
+						<h3>Challenge</h3>
+						<p>Make contact search easier using Lightning Components.</p>
+					</div>
+					<h3>Requirements</h3>
+					<ol>
+						<li>This challenge requires a <a href="https://sfdc.co/df16devsignup">Force.com Developer Edition.</a></li>
+						<li>Create a Lightning Application named SearchContacts. The application is made of Lightning Components. You can choose to have one or more components depending on your design.</li>
+						<li>The application should have one search box where a user can enter an Account Name and the list below should return related contacts of the searched Account.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="row card" id="heroku">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #9893bc;">
+					<h1>Dreamforce 2016</h1>
+					<h2>Heroku App in Action</h2>
+				</div>
+				<div class="row card_body">
+					<div class="challenge">
+						<h3>Challenge</h3>
+						<p>Deploy an app on Heroku that uses Heroku Connect to show the accounts from Salesforce in your application.</p>
+					</div>
+					<h3>Requirements</h3>
+					<ol>
+						<li>Refer to <a href="bit.ly/df16herokuhack">this blog</a> for instructions on installing, running the app locally and deploying to Heroku.</li>
+						<li>Modify the app such that it can display Accounts from Salesforce.</li>
+						<li>Redeploy the changes on Heroku.</li>
+					</ol>
+					<h3>Clue</h3>
+					<p>You can refer to the <a href="https://sfdc.co/df16hackclue">Trailhead Heroku Connect module</a> for help.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row card" id="all_about_apis">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #4b4f66;">
+					<h1>Dreamforce 2016</h1>
+					<h2>All About APIs</h2>
+				</div>
+				<div class="row card_body">
+					<div class="challenge">
+						<h3>Challenge</h3>
+						<p>An API is an interface through which one application communicates with other. Salesforce can be integrated with third party applications through a REST API. You need to create a REST Resource in your org such that you can use Salesforce REST APIs to update Salesforce data from outside the system.</p>
+					</div>
+					<h3>Requirements</h3>
+					<ol>
+						<li>This challenge requires a <a href="https://sfdc.co/df16devsignup">Force.com Developer Edition.</a></li>
+						<li>Create an Apex REST Resource in Salesforce such that you can access and modify Salesforce data through external system(that external system for this hack can be your machine terminal).</li>
+						<li>Refer to our <a href="https://sfdc.co/df16restapihack">Apex Developer Guide</a> for reference and sample code.</li>
+						<li>Update the Rest Resource such that you are able to update a Contact’s description field as “Inactive Contact”.</li>
+						<li>You can use the sessionID for authentication instead of your username/password as shown in the sample code and demonstrate your solution by making the REST call to your ORG.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="row card" id="windows">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #8dba53;">
+					<h1>Dreamforce 2016</h1>
+					<h2>Adaptive Layout with Windows 10 UWP Apps</h2>
+				</div>
+				<div class="row card_body">
+					<div class="challenge">
+						<h3>Challenge</h3>
+						<p>Windows Store applications run on a wide range of devices with different screen sizes and resolutions. In this challenge, using the Windows 10 UWP, you will be building an application that utilizes Adaptive layouts to make the app look good on wide devices such as slates as well as narrow devices such as phones.</p>
+					</div>
+					<h3>Requirements</h3>
+					<p>The requirements and steps are listed at https://aka.ms/tkm057.</p>
+					<p>Attendees at the very least will need:</p>
+					<ol>
+						<li>A PC with Windows 10 installed.</a></li>
+						<li>Visual Studio 2015 with the Universal Windows App Development Tools selected from the optional features list. You may want to preinstall the <a href="https://aka.ms/lf6stw">free Visual Studio Community Edition</a></li>
+						<li>Developer mode enabled on their device. You can see how to do this using <a href="https://aka.ms/bjcmqp">this link.</a></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<!-- Card Template -->
+		<!--
+		<div class="row card" id="card_id">
+			<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+				<div class="row card_header" style="background-color: #f00;">
+					<h1></h1>
+					<h2></h2>
+				</div>
+				<div class="row card_body">
+					<div class="challenge">
+						<h3></h3>
+						<p></p>
+					</div>
+					<h3>Requirements</h3>
+					<ol>
+						<li></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>
